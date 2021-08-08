@@ -10,16 +10,16 @@ import android.view.inputmethod.InputMethodManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.activity_class_task4.*
+import kotlinx.android.synthetic.main.activity_class_task4n6.*
 
-class ClassTask4 : AppCompatActivity() {
+class ClassTask4n6 : AppCompatActivity() {
     var data = arrayListOf<String>()
     lateinit var adapter: WordsAdapter
     lateinit var recyclerView: RecyclerView
-    var TAG = ClassTask4::class.simpleName
+    var TAG = ClassTask4n6::class.simpleName
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_class_task4)
+        setContentView(R.layout.activity_class_task4n6)
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = WordsAdapter(data) { s: String, i: Int ->
